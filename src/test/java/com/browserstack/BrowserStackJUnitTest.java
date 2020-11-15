@@ -73,7 +73,12 @@ public class BrowserStackJUnitTest {
                 capabilities.setCapability(pair.getKey().toString(), pair.getValue().toString());
             }
         }
-
+        
+        String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
+        if(buildName != null) {
+            capabilities.setCapability("build", buildName);
+        }
+        
         String username = System.getenv("BROWSERSTACK_USERNAME");
         if(username == null) {
             username = (String) config.get("user");
