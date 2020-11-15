@@ -22,11 +22,6 @@
 			"os": "Windows",
 			"os_version": "10",
 			"resolution": "1280x1024"
-		},
-		{
-			"os_version": "14",
-			"device": "iPhone 11",
-			"real_mobile": "true"
 		}
 	]
 }
