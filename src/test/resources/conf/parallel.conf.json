@@ -1,27 +1,32 @@
 {
-  "server": "hub-cloud.browserstack.com",
-  "user": "BROWSERSTACK_USERNAME",
-  "key": "BROWSERSTACK_ACCESS_KEY",
-
-  "capabilities": {
-    "build": "junit-browserstack",
-    "name": "parallel_test",
-    "browserstack.debug": true
-  },
-
-  "environments": [
-    {
-      "browser": "chrome"
-    },
-    {
-      "browser": "firefox"
-    },
-    {
-      "browser": "safari",
-      "os": "OS X"
-    },
-    {
-      "browser": "Internet Explorer"
-    }
-  ]
+	"server": "hub-cloud.browserstack.com",
+	"user": "abhisingh5",
+	"key": "E9yopbnGog6knndmwTnL",
+	"capabilities": {
+		"build": "junit-browserstack-jenkins",
+		"name": "parallel_test",
+		"browserstack.local": "true",
+		"browserstack.debug": true,
+		"browserstack.console": "verbose",
+		"browserstack.networkLogs": true
+	},
+	"environments": [
+		{
+			"browser": "chrome",
+			"os": "Windows",
+			"os_version": "10",
+			"resolution": "1280x1024"
+		},
+		{
+			"browser": "firefox",
+			"os": "Windows",
+			"os_version": "10",
+			"resolution": "1280x1024"
+		},
+		{
+			"os_version": "14",
+			"device": "iPhone 11",
+			"real_mobile": "true"
+		}
+	]
 }
